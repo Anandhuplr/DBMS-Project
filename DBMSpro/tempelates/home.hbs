@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="css/home.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nosifer&family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+
+  <title>Product Manager</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e3bb2f2a0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const username = "{{ username }}";
+    if(username!==null&&username!==""){
+    // Set username in localStorage
+    localStorage.setItem('username', username);
+    const temp="{{username}}"
+    
+    // Update the #a element with the username
+    const aElement = document.getElementById('a');
+    if (aElement) {
+        aElement.innerHTML = "Hello " + localStorage.getItem('username');
+        console.log(localStorage.getItem())
+    }
+    }
+    else{
+      const aElement = document.getElementById('a');
+    if (aElement) {
+        aElement.innerHTML = "Hello " + localStorage.getItem('username');
+        console.log(localStorage.getItem())
+    }
+
+    }
+}
+);
+</script>
+<div id="header">
+  <div class="container">
+    <nav>
+      <h1>TechZone </h1>
+    <ul>
+      <li><a href='#header'>Home</a></li>
+      <li><a href='/about'>About</a></li>
+      <li><a href='#products'>Functions</a></li>
+      <li><a href='#contact'>Contact</a></li>
+      <li><a href="/login">Log out</a></li>
+    </ul>
+  </nav>
+
+  </div>
+</div>
+<div id="products">
+  <div class="aboutus">
+    <h1 class="sub-title" id="a"></h1><br>
+    <p>This website is built for the management of products for the <i>TechZone</i> electronics stores all across India.</p>
+    <p id="li2"> <b><i>sales made easy - happy employees - better the work done.</i><b></p>
+    
+</div>
+</div>
+<div id="products">
+  <div class="container">
+    <h1 class="sub-title">Functions</h1> 
+    <div class="service-list">
+      <div>
+        <i class="fa-solid fa-user"></i>
+        <h2>Recommended Products</h2>
+        <p>find best in demand </p>
+        <a href="/recommd">Click Here!</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-pen-to-square"></i>
+        <h2>Update Products</h2>
+        <p>dont forget to inform the manager <b>loyalty and trustworsthy</b></p>
+        <a href="/update">Click Here!</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h2>Search Products</h2>
+        <p>your inventory -"one should always have  knowledge of his pockets"~someone </p>
+        <a href='/search'>Click Here!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Us</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>productmanager@gmail.com</p> 
+        <p><i class="fa-solid fa-phone"></i>0123456789</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

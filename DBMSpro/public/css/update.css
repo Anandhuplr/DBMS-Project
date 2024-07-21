@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  }
+  
+body{
+    background: #080808;
+    color: #fff;
+  }
+  
+#header{
+    width: 100%;
+    /*height: 100vh;
+    /*background-image: url(images/img1.jpg);
+    background-size: cover;
+    background-position: center;*/
+  }
+  
+.container{
+    padding: 10px 10%;
+  
+  }
+
+  nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  nav h1{
+    font-size: 70px;
+    font-family:  'Caveat', cursive;
+    color: rgb(112, 202, 77);
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #3333ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+  
+  .box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 1050px;
+    height: 500px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background: rgba(32, 30, 30, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(15, 10, 108, 0.8);
+    border-radius: 10px;
+  }
+
+  .box h1{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+  }
+  .box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+  }
+  .box .sales_increase{
+    position: relative;
+  }
+
+  .box .sales_increase input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .box .sales_increase label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s ;
+  }
+
+  /*#textbox1:focus + .box .sales_increase label{
+    transform: translateY(-90px);
+  }*/ 
+
+.box .sales_increase input:focus ~ label,
+.box .sales_increase input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: rgb(241, 242, 242);
+  font-size: 14px;
+}
+
+.box .gadget_id{
+  position: relative;
+}
+
+.box .gadget_id input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.box .gadget_id label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s ;
+}
+
+/*#textbox1:focus + .box .sales_increase label{
+  transform: translateY(-90px);
+}*/ 
+
+.box .gadget_id input:focus ~ label,
+.box .gadget_id input:valid ~ label {
+top: -20px;
+left: 0;
+color: rgb(241, 242, 242);
+font-size: 14px;
+}
+
+.box .location{
+  position: relative;
+}
+
+.box .location input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.box .location label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s ;
+}
+
+/*#textbox1:focus + .box .sales_increase label{
+  transform: translateY(-90px);
+}*/ 
+
+.box .location input:focus ~ label,
+.box .location input:valid ~ label {
+top: -20px;
+left: 0;
+color: rgb(241, 242, 242);
+font-size: 14px;
+}
+
+.box form button {
+  background: #3333ff;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.box button:hover {
+  background: rgba(15, 10, 108, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
